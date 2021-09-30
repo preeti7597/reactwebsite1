@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Kaisei HarunoUmi";  
+}
+.navbar1{
+    box-shadow: 4px -2px 20px 6px #f1f1f1;
+}
+.navbar{
+    background-color: white;
+    padding: 1rem 0rem 0.3rem;
+}
+.navbar-brand{
+    font-size: 1.7rem !important; 
+    background:linear-gradient(to right ,#ff5722 30%, #ffeb3b 90%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent ;
+    font-weight: bold;
+}
+.navbar a{
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+    color:rgb(0, 0, 0);
+}
+.navbar a:hover{
+    color:blue !important;
+}
+
+.menu_active{
+    font-weight: bold;
+    color:rgb(250, 41, 4) !important;
+    border-bottom: 1px solid rgb(151, 149, 149);
+}
+.icon{
+    color:#39009e;
+    font-size: 3rem !important;
+    animation: mymove 20s infinite;
+}
+.icon-li{
+    font-size: 1.1rem;
+}
+
+/*-------------------------------home----------------------------------*/
+#header{
+    width:100%;
+    height:90vh;
+    margin-top:25px;
+}
+.heading1{
+    font-size: 2.2rem;
+    color:#cc0000;
+    font-weight: bold;
+}
+.heading2{
+    font-weight: bold;
+}
+.brand-name{
+    color:#098633;
+}
+.btn-get-started{
+    color:rgb(3, 29, 3);
+    letter-spacing: 1px;
+    border:2px solid rgb(64, 64, 245);
+    border-radius: 25px;
+    text-decoration: none;
+    padding:10px 30px;
+    display:inline-block;
+    transition:0.5s;
+}
+
+.btn-get-started:hover{
+    background-color: rgb(60, 60, 250);
+    color:white;
+}
+.header-img{
+    text-align:right;
+}
+#header .img-fluid-animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(-40px);   
+    }
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(-40px);   
+    }
+}
+/*--------------------------Card-----------------------------------*/
+
+.card-img-top{
+    height:250px;
+}
+.btn {
+    color:rgb(3, 29, 3);
+    letter-spacing: 1px;
+    border:2px solid #43a203;
+    border-radius: 20px;
+    text-decoration: none;
+    display:inline-block;
+    transition:0.5s;
+}
+
+.btn:hover{
+    background-color: #43a203;
+    color:white;
+}
+
+.h1service{
+    color:#da0097;
+    text-shadow: 3px  2px rgb(226, 250, 7);
+    letter-spacing:2px;
+}
+
+/*--------------------------form--------------------------*/
+form{
+    background-color: #de820a;
+    border-radius: 20px;
+    margin-bottom:20px;
+}
+.form-label{
+    font-weight: bold;
+}
+
+/*----------------------footer-----------------------------*/
+footer{
+    font-family: 'PT Serif', serif;
+    box-shadow: 1px -2px 13px 0px #0000002e;  
+}
+.text-uppercase {
+    font-size:0.8rem;
+    color:rgb(202, 63, 7);
+}
+
+/*-----------------------responsive--------------------*/
+@media (max-width:991px){
+    #header{
+        height:80vh;
+        text-align:center;
+    }
+    #header .header-img{
+        text-align: center;
+    }
+    #header .header-img img{
+        width:80%;
+    }
+    footer{
+        margin-top:25px;
+    }
+}
+@media (max-width:768px){
+    .navbar-brand{
+        font-size: 1.5rem !important ;
+    }
+    .icon{
+        font-size: 2.2rem !important;
+    }
+    #header{
+        margin-top:20px;
+    }
+    #header h1{
+        font-size: 28px;
+    }       
+    #header h2{
+        font-size:18px;
+    }
+    #header .header-img img{
+        width:100%;
+    }
+    footer{
+        margin-top: 35px;
+    }
+}
+
+/*------------animation--------------------------*/
+@keyframes mymove {
+    50% {transform: rotate(20deg);
+    }
+}
