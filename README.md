@@ -1,5 +1,3 @@
-#Link project link - https://preeti7597.github.io/reactwebsite1/
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
